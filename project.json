@@ -1,0 +1,12 @@
+{
+  "name": "OMO Proof",
+  "requiredEnv": [
+    "DATABASE_URL",
+    "SESSION_SECRET",
+    "OPERATOR_ACCESS_CODE",
+    "PORTALDOT_RPC_URL",
+    "PORTALDOT_CHAIN_ID",
+    "RECEIPT_CONTRACT_ADDRESS",
+    "PORTALDOT_NATIVE_DECIMALS"
+  ]
+}

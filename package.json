@@ -1,0 +1,42 @@
+{
+  "name": "omo-proof",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build --webpack",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "contracts:compile": "node scripts/compile.mjs",
+    "contracts:deploy": "node --env-file-if-exists=.env.local scripts/deploy.mjs",
+    "db:migrate": "node --env-file-if-exists=.env.local scripts/migrate.mjs",
+    "check": "npm run typecheck && npm test && npm run build"
+  },
+  "dependencies": {
+    "next": "16.3.8",
+    "react": "19.2.6",
+    "react-dom": "19.2.6",
+    "@neondatabase/serverless": "1.2.0",
+    "ethers": "6.17.0",
+    "zod": "4.5.4",
+    "tailwindcss": "4.3.0",
+    "@tailwindcss/postcss": "4.3.0",
+    "clsx": "2.1.1",
+    "tailwind-merge": "3.6.0"
+  },
+  "devDependencies": {
+    "typescript": "6.0.3",
+    "@types/node": "24.x",
+    "@types/react": "19.2.15",
+    "@types/react-dom": "19.2.3",
+    "vitest": "5.0.5",
+    "tsx": "4.23.15",
+    "solc": "0.8.38",
+    "ganache": "7.9.2"
+  },
+  "engines": {
+    "node": "24.x"
+  }
+}

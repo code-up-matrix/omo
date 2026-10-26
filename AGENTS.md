@@ -1,0 +1,2 @@
+# OMO Proof
+Use Node 24 and npm ci. Run npm run check before publishing. Never put a private key in browser code. Only use a verified testnet. Do not claim a transaction occurred without an actual transaction receipt. Keep local examples and real chain evidence distinct. Deployment requires the user's Vercel team grant and provider configuration. Never fake hackathon registration, progress reports, demo footage or testnet integration.
